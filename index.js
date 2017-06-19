@@ -16,13 +16,13 @@ output = loremIpsum({
 
 app.get('/lorem/:count', function (req, res){
   res.send(
-    let num = req.params.count
-    , count:  num
+    let num = parseInt(req.params.count)
+    , count:  parseInt(num)
     , units: 'paragraphs'
-    , sentenceLowerBound: 3
-    , sentenceUpperBound: 4
-    , paragraphLowerBound: 3
-    , paragraphUpperBound: 4
+    , sentenceLowerBound: 10
+    , sentenceUpperBound: 10
+    , paragraphLowerBound: 15
+    , paragraphUpperBound: 15
     , format: 'plain'
     , suffix: "####"
   );
